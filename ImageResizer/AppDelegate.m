@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AXStatusItemPopup.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,12 +16,31 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *vc = [sb instantiateControllerWithIdentifier:@"Top"];
+    self.statusItemPopup  = [[AXStatusItemPopup alloc] initWithViewController:vc image:[NSImage imageNamed:@"statusbar_icon"] alternateImage:[NSImage imageNamed:@"statusbar_icon"]];
+    self.statusItemPopup.animated = 1;
+    
+    NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:@"Preferences..." action:@selector(openSetting) keyEquivalent:@""];
+    item.target = self;
+    [self.statusItemPopup.rightClickMenu insertItem:item atIndex:0];
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+-(void)openSetting
+{
+    if (!self.settingWindow)
+    {
+        NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.settingWindow = [sb instantiateControllerWithIdentifier:@"MyWindowController"];
+    }
+    
+    [self.settingWindow showWindow:self];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)aNotification
+{
 }
 
 @end

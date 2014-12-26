@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC8B9771A4CFE7600041454 /* NSImage+ResizeMagick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8B9761A4CFE7600041454 /* NSImage+ResizeMagick.m */; };
+		2FEE5D421A4D2ADB00FD3C26 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE5D411A4D2ADB00FD3C26 /* SettingVC.m */; };
 		2FF902241A4A8D8E00758AF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF902231A4A8D8E00758AF4 /* AppDelegate.m */; };
 		2FF902261A4A8D8E00758AF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF902251A4A8D8E00758AF4 /* main.m */; };
 		2FF902291A4A8D8E00758AF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF902281A4A8D8E00758AF4 /* ViewController.m */; };
 		2FF9022B1A4A8D8F00758AF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9022A1A4A8D8F00758AF4 /* Images.xcassets */; };
 		2FF9022E1A4A8D8F00758AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9022C1A4A8D8F00758AF4 /* Main.storyboard */; };
 		2FF9023A1A4A8D8F00758AF4 /* ImageResizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF902391A4A8D8F00758AF4 /* ImageResizerTests.m */; };
+		2FF9024C1A4AA3D400758AF4 /* DragDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9024B1A4AA3D400758AF4 /* DragDropView.m */; };
+		2FF9024F1A4ABFBE00758AF4 /* ResizeSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9024E1A4ABFBE00758AF4 /* ResizeSettingVC.m */; };
+		2FF902531A4AC04400758AF4 /* GRPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF902521A4AC04400758AF4 /* GRPushSegue.m */; };
+		2FF902571A4BC30600758AF4 /* AXStatusItemPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF902561A4BC30600758AF4 /* AXStatusItemPopup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FC8B9751A4CFE7600041454 /* NSImage+ResizeMagick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ResizeMagick.h"; sourceTree = "<group>"; };
+		2FC8B9761A4CFE7600041454 /* NSImage+ResizeMagick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ResizeMagick.m"; sourceTree = "<group>"; };
+		2FEE5D401A4D2ADB00FD3C26 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		2FEE5D411A4D2ADB00FD3C26 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		2FF9021D1A4A8D8E00758AF4 /* ImageResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF902211A4A8D8E00758AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FF902221A4A8D8E00758AF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +48,14 @@
 		2FF902331A4A8D8F00758AF4 /* ImageResizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF902381A4A8D8F00758AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FF902391A4A8D8F00758AF4 /* ImageResizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageResizerTests.m; sourceTree = "<group>"; };
+		2FF9024A1A4AA3D400758AF4 /* DragDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropView.h; sourceTree = "<group>"; };
+		2FF9024B1A4AA3D400758AF4 /* DragDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropView.m; sourceTree = "<group>"; };
+		2FF9024D1A4ABFBE00758AF4 /* ResizeSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizeSettingVC.h; sourceTree = "<group>"; };
+		2FF9024E1A4ABFBE00758AF4 /* ResizeSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizeSettingVC.m; sourceTree = "<group>"; };
+		2FF902511A4AC04400758AF4 /* GRPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRPushSegue.h; sourceTree = "<group>"; };
+		2FF902521A4AC04400758AF4 /* GRPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRPushSegue.m; sourceTree = "<group>"; };
+		2FF902551A4BC30600758AF4 /* AXStatusItemPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXStatusItemPopup.h; sourceTree = "<group>"; };
+		2FF902561A4BC30600758AF4 /* AXStatusItemPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXStatusItemPopup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +97,18 @@
 		2FF9021F1A4A8D8E00758AF4 /* ImageResizer */ = {
 			isa = PBXGroup;
 			children = (
+				2FF9022C1A4A8D8F00758AF4 /* Main.storyboard */,
 				2FF902221A4A8D8E00758AF4 /* AppDelegate.h */,
 				2FF902231A4A8D8E00758AF4 /* AppDelegate.m */,
 				2FF902271A4A8D8E00758AF4 /* ViewController.h */,
 				2FF902281A4A8D8E00758AF4 /* ViewController.m */,
+				2FF9024D1A4ABFBE00758AF4 /* ResizeSettingVC.h */,
+				2FF9024E1A4ABFBE00758AF4 /* ResizeSettingVC.m */,
+				2FEE5D401A4D2ADB00FD3C26 /* SettingVC.h */,
+				2FEE5D411A4D2ADB00FD3C26 /* SettingVC.m */,
+				2FF902541A4BBC4C00758AF4 /* Custom */,
 				2FF9022A1A4A8D8F00758AF4 /* Images.xcassets */,
-				2FF9022C1A4A8D8F00758AF4 /* Main.storyboard */,
+				2FF902501A4AC04400758AF4 /* GRPushSegue */,
 				2FF902201A4A8D8E00758AF4 /* Supporting Files */,
 			);
 			path = ImageResizer;
@@ -114,6 +138,28 @@
 				2FF902381A4A8D8F00758AF4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FF902501A4AC04400758AF4 /* GRPushSegue */ = {
+			isa = PBXGroup;
+			children = (
+				2FF902511A4AC04400758AF4 /* GRPushSegue.h */,
+				2FF902521A4AC04400758AF4 /* GRPushSegue.m */,
+			);
+			path = GRPushSegue;
+			sourceTree = "<group>";
+		};
+		2FF902541A4BBC4C00758AF4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				2FF902551A4BC30600758AF4 /* AXStatusItemPopup.h */,
+				2FF902561A4BC30600758AF4 /* AXStatusItemPopup.m */,
+				2FF9024A1A4AA3D400758AF4 /* DragDropView.h */,
+				2FF9024B1A4AA3D400758AF4 /* DragDropView.m */,
+				2FC8B9751A4CFE7600041454 /* NSImage+ResizeMagick.h */,
+				2FC8B9761A4CFE7600041454 /* NSImage+ResizeMagick.m */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +263,13 @@
 			files = (
 				2FF902291A4A8D8E00758AF4 /* ViewController.m in Sources */,
 				2FF902261A4A8D8E00758AF4 /* main.m in Sources */,
+				2FF9024F1A4ABFBE00758AF4 /* ResizeSettingVC.m in Sources */,
 				2FF902241A4A8D8E00758AF4 /* AppDelegate.m in Sources */,
+				2FC8B9771A4CFE7600041454 /* NSImage+ResizeMagick.m in Sources */,
+				2FF902531A4AC04400758AF4 /* GRPushSegue.m in Sources */,
+				2FF902571A4BC30600758AF4 /* AXStatusItemPopup.m in Sources */,
+				2FEE5D421A4D2ADB00FD3C26 /* SettingVC.m in Sources */,
+				2FF9024C1A4AA3D400758AF4 /* DragDropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +456,7 @@
 				2FF9023F1A4A8D8F00758AF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FF902401A4A8D8F00758AF4 /* Build configuration list for PBXNativeTarget "ImageResizerTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +465,7 @@
 				2FF902421A4A8D8F00758AF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

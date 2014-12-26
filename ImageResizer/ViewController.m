@@ -7,19 +7,28 @@
 //
 
 #import "ViewController.h"
-
+#import "AXStatusItemPopup.h"
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
+    dragDropView.allowFileExtensions = @[@"png"];
 }
 
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
+-(void)dragDropView:(DragDropView *)dView getItemPath:(NSString *)path
+{
+    imagePath = path;
+    [self performSegueWithIdentifier:@"showResize" sender:self];
+}
 
-    // Update the view, if already loaded.
+-(void)prepareForSegue:(NSStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showResize"])
+    {
+        ResizeSettingVC *vc = (ResizeSettingVC*)segue.destinationController;
+        vc.imagePath = imagePath;
+    }
 }
 
 @end

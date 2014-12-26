@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "AXStatusItemPopup.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-
+@property (nonatomic,strong) AXStatusItemPopup * statusItemPopup;
+@property (nonatomic,strong) NSWindowController *settingWindow;
 @end
 

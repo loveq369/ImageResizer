@@ -7,9 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DragDropView.h"
+#import "ResizeSettingVC.h"
 
-@interface ViewController : NSViewController
-
+@interface ViewController : NSViewController <DragDropViewDelegate>
+{
+    IBOutlet DragDropView *dragDropView;
+    NSString *imagePath;
+}
 
 @end
 
